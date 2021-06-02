@@ -9,8 +9,8 @@ AddHost("https://sabotin.ung.si/~dk0035/");
 
 //var type_of_experiment ="test-short";
 //var type_of_experiment ="test-full"
-var type_of_experiment ="pilot"
-//var type_of_experiment ="main"
+//var type_of_experiment ="pilot"
+var type_of_experiment ="main"
 
 var progressBarText = "прогрес";
 var stimuli_csv_table="design_final.csv";
@@ -50,8 +50,8 @@ Header(
 )
 .log("uniqueID", id);
 
-//Sequence("finished")
-Sequence("intro", "intro1",  "demo", "trials",  "demo1",  "demo2", "expbegin", sepWith("sendAsync", randomize("experiment")), "Sync", SendResults(), "bye");
+Sequence("finished")
+//Sequence("intro", "intro1",  "demo", "trials",  "demo1",  "demo2", "expbegin", sepWith("sendAsync", randomize("experiment")), "Sync", SendResults(), "bye");
 
 
 
